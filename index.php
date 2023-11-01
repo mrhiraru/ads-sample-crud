@@ -24,7 +24,7 @@
         ?>
             <tr>
                 <td><?= $res['subject_id']?></td>
-                <td><?= $res['subject_cpde']?></td>
+                <td><?= $res['subject_code']?></td>
                 <td><?= $res['subject_name']?></td>
                 <td>
                     <a href="forms/editform.php?id=<?= $res['subject_id'] ?>">Edit</a> | 

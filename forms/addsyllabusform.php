@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>Syllabus Author</td>
-                <td><input type="text" name="name"></td>
+                <td><input type="text" name="author"></td>
             </tr>
             <tr>
                 <td>Subject</td>
@@ -30,9 +30,9 @@
                         $query = "SELECT * FROM tblsubject";
                         $result = mysqli_query($dbc, $query);
                         while ($res = mysqli_fetch_array($result)) {
-                            echo "option value=\"", $res['subject_id'] . "\">";
+                            echo "<option> value=\"".$res['subject_id']."\">";
                             echo $res['subject_name'];
-                            echo "<option>";
+                            echo "</option>";
                         }
                         ?>
                     </select>

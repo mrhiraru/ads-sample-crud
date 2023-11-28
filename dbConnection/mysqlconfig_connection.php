@@ -5,6 +5,6 @@
     DEFINE('DB_NAME', 'dbschedule');
 
     $dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) 
-    OR dies('Could not Connect to MySQL: '.mysqli_connect_error());
+    OR die('Could not Connect to MySQL: '.mysqli_connect_error());
     
 ?> 

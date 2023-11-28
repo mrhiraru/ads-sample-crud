@@ -17,6 +17,9 @@
             <td>ID</td>
             <td>Subject Code</td>
             <td>Subject Name</td>
+            <td>Syllabus ID </td>
+            <td>Syllabus Code</td>
+            <td>Syllabus Author</td>
             <td>Action</td>
         </tr>
         <?php 
@@ -26,6 +29,9 @@
                 <td><?= $res['subject_id']?></td>
                 <td><?= $res['subject_code']?></td>
                 <td><?= $res['subject_name']?></td>
+                <td><?= $res['syllabus_id']?></td>
+                <td><?= $res['syllabus_code']?></td>
+                <td><?= $res['syllabus_author']?></td>
                 <td>
                     <a href="forms/editform.php?id=<?= $res['subject_id'] ?>">Edit</a> | 
                     <a href="functions/delete.php?id=<?= $res['subject_id'] ?> " 
